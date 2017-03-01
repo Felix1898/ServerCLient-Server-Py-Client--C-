@@ -7,6 +7,7 @@
 #include<netdb.h>
 #include<arpa/inet.h>
 #include <string>
+
 int main(){
   int clientSocket;
   char buffer[1024];
@@ -29,8 +30,8 @@ int main(){
 
 
   addr_size = sizeof serverAddr;
+while(1){
   connect(clientSocket, (struct sockaddr *) &serverAddr, addr_size);
-
 printf("\n Enter the name of file which has the data :");
 char data[1024];
 gets(data);
@@ -40,5 +41,8 @@ gets(data);
 
   printf("\n Data received: %s      \n",buffer);   
   printf("\n");
+
+usleep(2000000);
+  }
   return 0;
 }
