@@ -6,7 +6,7 @@ Instructions to Run :-  <br>
 In terminal execute : python server.py <br>
 In other terminal(s) execute : gcc client.cpp <br>
 Followed by : ./a.out <br>
-
+When asked for file name enter : mytext.txt <br>
 
 
 *Made by Felix 1898*
